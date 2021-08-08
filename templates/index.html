@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sentimnet Based Product Recommendation</title>
+  
+<style>
+.button {
+  background-color: #4CAF50;
+  border-radius: 12px;
+  border: none;
+  color: white; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body{
+  background-color: hsla(90, 42%, 50%, 0.3);  
+}
+label {
+    
+    clear:left;
+    text-align:center;
+    padding-left:550px;
+    padding-right:10px;
+}
+input, label {
+    float:left;
+    text-align:center;
+}
+</style>
+  
+</head>
+<body>
+ <div class="login"> </br></br>
+    <!--Apply styling to the header of the page -->
+	<h1 style="text-align:center;color:red;background-color:powderblue;">Sentiment Based Product Recommendation System</h1>
+	</br></br></br>
+     <!-- Input For Receiving query to model -->
+    <form action="{{ url_for('predict')}}"method="post">
+    <label for="user">Enter the UserName : </label>	
+        <!-- Input field -->
+    	<input id="one" type="text" name="Username" placeholder="Enter the Uesr Id"  required="required" />
+	</br></br> 
+	</br></br>
+	    <!-- Extra spaces to asjust the elements in Ui-->
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	    
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <!-- Submit Button --> 
+        <button class="button" type="submit" class="btn btn-primary btn-block btn-large">Recommend Products</button>
+    </form>
+   <br>
+   <br>
+   <h2>{{ prediction_text }}</h2> <!-- Output the Result -->
+ </div>
+</body>
+</html>
