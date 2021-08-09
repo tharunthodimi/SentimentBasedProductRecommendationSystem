@@ -12,4 +12,9 @@ Model Deployment can be Accessed from : https://sentimnetbasedproductrecom.herok
 **Output**
 - Model is deployed in heroku Platform and developed using Flask Framework
 
+**Files Uploaded**
+
+- EDA and model building: TharunThodimi_sentimentbasedrecommendation.ipynb
+- app.py,model.py,index.html: for Deploymnet purpose
+- pickle files for storing objects
  
