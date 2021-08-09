@@ -1,6 +1,6 @@
 # SentimentBasedProductRecommendationSystem
 
-Model Deployment can be Accessed from : https://sentimnetbasedproductrecom.herokuapp.com/
+**Model Deployment can be Accessed from** : https://sentimnetbasedproductrecom.herokuapp.com/
 
 
 **Problem Statement**
